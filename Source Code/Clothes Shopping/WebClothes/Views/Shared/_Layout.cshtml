@@ -1,0 +1,232 @@
+﻿@model ProfileModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    @*<title>Clothing Online Shop</title>*@
+    <title>Doctris - Doctor Appointment Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in" />
+    <meta name="Version" content="v1.2.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/lib/images/favicon.ico.png">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/remixicon.css" rel="stylesheet" type="text/css" />
+    <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
+    <!-- Css -->
+    <link href="/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+
+</head>
+
+<body>
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="@Url.Action("Index", "Home")">
+                @*<img src="/lib/images/logoClothes.png" height="50" width="100" class="logo-light-mode" alt="">
+                <img src="/lib/images/logoClothes.png" height="50" width="100" class="logo-dark-mode" alt="">*@
+                <img src="/lib/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                <img src="/lib/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+            </a>
+            <!-- Logo End -->
+            <!-- Start Mobile Toggle -->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+            <!-- End Mobile Toggle -->
+            <!-- Start Dropdown -->
+            @if (ViewBag.IsLoggedIn != null && (bool)ViewBag.IsLoggedIn)
+            {
+                <ul class="dropdowns list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="shopping-cart" class="fea icon-sm"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item mb-0 ms-1">
+                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <i class="uil uil-search"></i>
+                        </a>
+                    </li>
+                    @{
+                        if (Model.RoleName == "User")
+                        {
+                            <li class="list-inline-item mb-0 ms-1">
+                                <div class="dropdown dropdown-primary">
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="@Url.Content("~/Avatars/" + Model.Avatar)" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                                    <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
+                                        <a class="dropdown-item d-flex align-items-center text-dark" href="Profile">
+                                            <img src="@Url.Content("~/Avatars/" + Model.Avatar)" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <div class="flex-1 ms-2">
+                                                <span class="d-block mb-1">@Model.FullName</span>
+                                                <small class="text-muted">@Model.RoleName</small>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Profile")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                                        <a class="dropdown-item text-dark" href="#"><span class="mb-0 d-inline-block me-1"><i class="uil uil-bill align-middle h6"></i></span> My Orders</a>
+                                        <div class="dropdown-divider border-top"></div>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Logout")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="list-inline-item mb-0 ms-1">
+                                <div class="dropdown dropdown-primary">
+                                    <button type="button" class="btn btn-pills btn-soft-primary dropdown-toggle p-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="@Url.Content("~/Avatars/" + Model.Avatar)" class="avatar avatar-ex-small rounded-circle" alt=""></button>
+                                    <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow border-0 mt-3 py-3" style="min-width: 200px;">
+                                        <a class="dropdown-item d-flex align-items-center text-dark" href="Profile">
+                                            <img src="@Url.Content("~/Avatars/" + Model.Avatar)" class="avatar avatar-md-sm rounded-circle border shadow" alt="">
+                                            <div class="flex-1 ms-2">
+                                                <span class="d-block mb-1">@Model.FullName</span>
+                                                <small class="text-muted">@Model.RoleName</small>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Profile")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-setting align-middle h6"></i></span> Profile Settings</a>
+                                        <a class="dropdown-item text-dark" href="#"><span class="mb-0 d-inline-block me-1"><i class="uil uil-bill align-middle h6"></i></span> My Orders</a>
+                                        <div class="dropdown-divider border-top"></div>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Users")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-clipboard-notes align-middle h6"></i></span> Manager Accounts</a>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Product")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-clipboard-notes align-middle h6"></i></span> Manager Products</a>
+                                        <a class="dropdown-item text-dark" href="#"><span class="mb-0 d-inline-block me-1"><i class="uil uil-clipboard-notes align-middle h6"></i></span> Manager Orders</a>
+                                        <div class="dropdown-divider border-top"></div>
+                                        <a class="dropdown-item text-dark" href="@Url.Action("Index", "Logout")"><span class="mb-0 d-inline-block me-1"><i class="uil uil-sign-out-alt align-middle h6"></i></span> Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+                    }
+                </ul>
+            }
+            else
+            {
+                <ul class="dropdowns list-inline mb-0">
+
+                    <span class="btn btn-pills btn-primary">
+                        <strong style="color: #000">
+                            <strong style="font-size: 14px">
+                                <strong style="font-family: monospace">
+                                    <a href="Login" style="color: white">Sign In</a>
+                                </strong>
+                            </strong>
+                        </strong>
+                    </span>
+
+                </ul>
+                <ul class="dropdowns list-inline mb-0">
+                    <span class="">
+                        <strong style="color: #000">
+                            <strong style="font-size: 14px">
+                                <strong style="font-family: monospace">
+                                    <a href="Signup" style="color: black">Sign Up</a>
+                                </strong>
+                            </strong>
+                        </strong>
+                    </span>
+
+                </ul>
+            }
+
+            <!-- Start Dropdown -->
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-left">
+                    @{
+                        if (Model != null && Model.RoleName == "Admin")
+                        {
+                            <li class="has-submenu parent-menu-item">
+                                <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="@Url.Action("Index", "Home")" class="sub-menu-item">Shop</a></li>
+                                    <li><a href="@Url.Action("Index", "Product")" class="sub-menu-item">Manager Products</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu parent-menu-item">
+                                <a href="javascript:void(0)">Orders</a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="#" class="sub-menu-item">Shop Cart</a></li>
+                                    <li><a href="#" class="sub-menu-item">My Orders</a></li>
+                                    <li><a href="#" class="sub-menu-item">Manager Orders</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu parent-menu-item">
+                                <a href="javascript:void(0)">Accounts</a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="@Url.Action("Index", "Users")" class="sub-menu-item">Manager Accounts</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="has-submenu parent-menu-item">
+                                <a href="javascript:void(0)">Products</a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="/Guest" class="sub-menu-item">Shop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="has-submenu parent-menu-item">
+                                <a href="javascript:void(0)">Orders</a><span class="menu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="/Cart" class="sub-menu-item">Shop Cart</a></li>
+                                    <li><a href="/Cart/Myorder" class="sub-menu-item">My Orders</a></li>
+                                </ul>
+                            </li>
+                        }
+                    }
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+
+    <div>@RenderBody()</div>
+
+    <footer class="bg-footer py-4">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start text-center">
+                        <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0">
+                    <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
+                        <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
+                        <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Icons -->
+    <script src="../js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="../js/app.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

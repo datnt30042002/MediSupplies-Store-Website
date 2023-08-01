@@ -1,0 +1,260 @@
+﻿@model List<CartModel>
+@{
+    ViewData["Title"] = "Cart";
+    Layout = null;
+}
+@using DAOLibrary.Repository.Object
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    @*<title>Clothing Online Shop</title>*@
+    <title>Doctris - Doctor Appointment Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in" />
+    <meta name="Version" content="v1.2.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/lib/images/favicon.ico.png">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/remixicon.css" rel="stylesheet" type="text/css" />
+    <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
+    <!-- Css -->
+    <link href="/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+
+</head>
+
+<body>
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div b-skjwban1nq class="container">
+            <!-- Logo container-->
+            <a b-skjwban1nq class="logo" href="/">
+                <img b-skjwban1nq src="/lib/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                <img b-skjwban1nq src="/lib/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+            </a>
+            <!-- Logo End -->
+            <!-- Start Mobile Toggle -->
+            <div b-skjwban1nq class="menu-extras">
+                <div b-skjwban1nq class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a b-skjwban1nq class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div b-skjwban1nq class="lines">
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+            <!-- End Mobile Toggle -->
+
+
+            <div b-skjwban1nq id="navigation">
+                <!-- Navigation Menu-->
+                <ul b-skjwban1nq class="navigation-menu nav-left">
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Products</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Guest" class="sub-menu-item">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Orders</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart" class="sub-menu-item">Shop Cart</a></li>
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart/Myorder" class="sub-menu-item">My Orders</a></li>
+                        </ul>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    <!-- Hero Start -->
+    <section>
+        <br></br>
+        <br></br>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <nav aria-label="breadcrumb" class="d-inline-block mt-3">
+                            <h3 class="sub-title mb-4">Shop Cart</h3>
+                        </nav>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <div class="position-relative">
+        <div class="shape overflow-hidden text-color-white">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!-- Start -->
+    @if (Model.Count() > 0)
+{
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive bg-white shadow rounded">
+                        <table class="table table-center table-padding mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="border-bottom p-3" style="min-width:20px "></th>
+                                    <th class="border-bottom p-3" style="min-width: 300px;">Product</th>
+                                    <th class="border-bottom text-center p-3" style="min-width: 160px;">Price</th>
+                                    <th class="border-bottom text-center p-3" style="min-width: 190px;">Qty</th>
+                                    <th class="border-bottom text-center p-3" style="min-width: 190px;">Total</th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                <tr>
+                                    <td class="h5 p-3 text-center"></td>
+                                    <td class="p-3">
+                                        <div class="d-flex align-items-center">
+                                                <img src="@item.Image" class="img-fluid avatar avatar-small rounded shadow" style="height:auto;" alt="">
+                                                <h6 class="mb-0 ms-3">@item.ProductName</h6>
+                                        </div>
+                                    </td>
+                                        <td class="text-center p-3">$@item.Price.00</td>
+                                    <td class="text-center shop-list p-3">
+                                            @item.Quantity
+                                    </td>
+                                        <td>$@(item.Price * item.Quantity)</td>
+                                        <td>
+                                            <div class="w-75 btn-group" role="group">
+                                                <a asp-controller="Cart" asp-action="Remove"
+                                               asp-route-ProductId="@item.ProductId" class="btn btn-danger mx-2">
+                                                    DELETE
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ms-auto mt-4 pt-2">
+                    <div class="table-responsive bg-white rounded shadow">
+                        <table class="table table-center table-padding mb-0">
+                            <tbody>
+                                <tr>
+                                    <td class="h6 p-3">Total All</td>
+                                    <td class="text-end font-weight-bold p-3">
+                                        @{
+                                            float Total = 0;
+                                            foreach (var item in Model)
+                                            {
+                                                Total += (float)item.Quantity * (float)item.Price;
+                                            }
+                                        }
+                                        $@Total.ToString("0.00")
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-4 pt-2 text-end">
+                            <a href="/Cart/Myorder" class="btn btn-primary">Checkout</a>
+                    </div>
+
+                        <div class="mt-4 pt-2 text-end">
+                            <a href="/Guest" class="btn btn-warning">Continue Shopping</a>
+                        </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    }
+    else
+    {
+        <span class="alert alert-danger">Empty</span>
+    }
+
+    <!-- End -->
+    <!-- Start -->
+    
+    <!--end footer-->
+    <!-- End -->
+    <!-- Back to top -->
+    <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5 rounded-pill text-center bg-primary justify-content-center align-items-center"><i data-feather="arrow-up" class="fea icon-sm"></i></a>
+    <!-- Back to top -->
+    <!-- Offcanvas Start -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop">
+        <div class="offcanvas-body d-flex align-items-center align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center">
+                            <h4>Search now.....</h4>
+                            <div class="subcribe-form mt-4">
+                                <form>
+                                    <div class="mb-0">
+                                        <input type="text" id="help" name="name" class="border rounded-pill" required="" placeholder="Search">
+                                        <button type="submit" class="btn btn-pills btn-primary">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div>
+    </div>
+    <!-- Offcanvas End -->
+    <!-- Start Footer -->
+    <footer class="bg-footer py-4">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start text-center">
+                        <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0">
+                    <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
+                        <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
+                        <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- End Footer -->
+
+    <!-- javascript -->
+    <script src="../assets/libs/feather-icons/feather.min.js"></script>
+    <!-- Main Js -->
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/plugins.init.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.runtimeconfig.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\refint\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.genruntimeconfig.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\ref\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.runtimeconfig.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\refint\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.genruntimeconfig.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\ref\DTOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.deps.json
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.runtimeconfig.json
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.AssemblyInfo.cs
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\refint\DTOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.pdb
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\DTOLibrary.genruntimeconfig.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DTOLibrary\obj\Debug\net6.0\ref\DTOLibrary.dll

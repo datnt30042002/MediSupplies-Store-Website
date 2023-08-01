@@ -1,0 +1,250 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Guest";
+    Layout = null;
+}
+@{
+    List<DTOLibrary.Models.Product> Products = Model.Products;
+    List<DTOLibrary.Models.Category> Categories = Model.Categories;
+}
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+    <head>
+    <meta charset="utf-8" />
+    @*<title>Clothing Online Shop</title>*@
+    <title>Doctris - Doctor Appointment Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in" />
+    <meta name="Version" content="v1.2.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/lib/images/favicon.ico.png">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/remixicon.css" rel="stylesheet" type="text/css" />
+    <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
+    <!-- Css -->
+    <link href="/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    </head>
+
+    <body>
+        <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div b-skjwban1nq class="container">
+            <!-- Logo container-->
+            <a b-skjwban1nq class="logo" href="/">
+                <img b-skjwban1nq src="/lib/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                <img b-skjwban1nq src="/lib/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+            </a>
+            <!-- Logo End -->
+            <!-- Start Mobile Toggle -->
+            <div b-skjwban1nq class="menu-extras">
+                <div b-skjwban1nq class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a b-skjwban1nq class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div b-skjwban1nq class="lines">
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+            <!-- End Mobile Toggle -->
+
+
+            <div b-skjwban1nq id="navigation">
+                <!-- Navigation Menu-->
+                <ul b-skjwban1nq class="navigation-menu nav-left">
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Products</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Guest" class="sub-menu-item">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Orders</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart" class="sub-menu-item">Shop Cart</a></li>
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart/Myorder" class="sub-menu-item">My Orders</a></li>
+                        </ul>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+        <!--end header-->
+        <!-- Navbar End -->
+
+
+        <!-- Start Hero -->
+        <section class="home-slider position-relative">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="bg-half-170 d-table align-items-center w-100" style="background:url('/lib/images/bg/pharm01.jpg') center center;">
+                            <div class="bg-overlay bg-overlay-dark"></div>
+                            <div class="container">
+                                <div class="row mt-5">
+                                    <div class="col-lg-12">
+                                        <div class="heading-title">
+                                            <h1 class="fw-bold mb-4">Doctors Prescribe <br> Meko Products</h1>
+                                            <p class="para-desc mb-0">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
+
+                                        <div class="mt-4 pt-2">
+                                        <form method="POST" asp-controller="Guest" asp-action="Search">
+                                            <div class="input-group">
+                                                <div class="form-outline">
+                                                    <input type="search" class="form-control" name="ProductName" value="@ViewBag.SearchValue" class="border rounded-pill" required="" placeholder="Medical device name..." />
+                                                    <label class="form-label">Product Name</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-pills btn-primary" style="height:40px">
+                                                    Search
+                                                </button>
+                                            </div>
+                                        </form>
+                                        </div>
+
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end container-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end section-->
+        <!-- End Hero -->
+
+
+    <div class="d-flex">
+        <br></br> <br></br>
+        <section class="section">
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="list-group list-group-flush">
+                    <a href="/Guest" class="list-group-item list-group-item-action list-group-item-light p-3"> All Categories</a>
+            @if (Categories.Count() > 0)
+            {
+                @foreach (var category in Model.Categories)
+                {
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3"
+               asp-action="Filter" asp-route-CategoryName="@category.CategoryName">
+                        @category.CategoryName
+                    </a>
+                }
+            }
+        </div>
+    </div>
+    </section>
+
+
+        <!-- Start -->
+        <section class="section">
+            <!-- Start Most Viewed Products -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="mb-0">Products</h5>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                @if (Products.Count() > 0)
+                        {
+                            @foreach (var product in Model.Products)
+                                        {
+                                            if (product.Status == true)
+                                            {
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card shop-list border-0">
+                            <form method="POST" asp-controller="Cart" asp-action="Add">
+                                        <input type="hidden" name="ProductId" value="@product.ProductId" />
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="@product.Image" style="height:260px; width:280px;" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="card-body content pt-4 p-2">
+                                            <a href="pharmacy-product-detail.html" class="text-dark product-name h6">@product.ProductName</a>
+                                <div class="d-flex justify-content-between mt-1">
+                                                    <h6 class="text-muted small font-italic mb-0 mt-1"><a style="color:orangered;">$@product.Price.00</a></h6>
+
+                                                <input name="Quantity" type="number" value="1" min="1" max="100"
+                                                       step="1" oninput="validity.valid||(value='');" />
+                                </div>
+                            </div>
+                                        <input type="submit" class="btn btn-primary" value="Add to cart" />
+                            </form>
+                        </div>
+                    </div><!--end col-->
+                    }
+                    }
+                }
+                else
+                {
+                    <p class="text-info" style="margin:2rem;">
+                        No result matched!
+                    </p>
+
+                    <br />
+                }
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        </div>
+
+        <!-- Start Footer -->
+    <footer class="bg-footer py-4">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start text-center">
+                        <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-sm-6 mt-4 mt-sm-0">
+                    <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
+                        <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
+                        <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
+                        <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
+                        <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                    </ul>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+        <!-- End Footer -->
+        
+        <!-- javascript -->
+    <!-- javascript -->
+    <script src="../libs/simplebar/simplebar.min.js"></script>
+    <script src="../libs/feather-icons/feather.min.js"></script>
+    <!-- Main Js -->
+    <!-- JAVASCRIPT -->
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/plugins.init.js"></script>
+    <script src="../js/app.js"></script>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Icons -->
+    <script src="../js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="../js/app.js"></script>
+    </body>
+</html>
+@if (ViewBag.Message != null)
+{
+    <script type="text/javascript">
+        window.onload = function () {
+            alert("@ViewBag.Message");
+        };
+    </script>
+}

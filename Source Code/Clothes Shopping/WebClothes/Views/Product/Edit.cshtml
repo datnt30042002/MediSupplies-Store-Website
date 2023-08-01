@@ -1,0 +1,192 @@
+﻿@model WebClothes.Models.ProductModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = null;
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-danger" role="alert">@ViewBag.Message</div>
+}
+
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    @*<title>Clothing Online Shop</title>*@
+    <title>Doctris - Doctor Appointment Booking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="Appointment, Booking, System, Dashboard, Health" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in" />
+    <meta name="Version" content="v1.2.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/lib/images/favicon.ico.png">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/remixicon.css" rel="stylesheet" type="text/css" />
+    <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet">
+    <!-- Css -->
+    <link href="/css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
+
+</head>
+
+<body>
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div b-skjwban1nq class="container">
+            <!-- Logo container-->
+            <a b-skjwban1nq class="logo" href="/">
+                <img b-skjwban1nq src="/lib/images/logo-dark.png" height="24" class="logo-light-mode" alt="">
+                <img b-skjwban1nq src="/lib/images/logo-light.png" height="24" class="logo-dark-mode" alt="">
+            </a>
+            <!-- Logo End -->
+            <!-- Start Mobile Toggle -->
+            <div b-skjwban1nq class="menu-extras">
+                <div b-skjwban1nq class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a b-skjwban1nq class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div b-skjwban1nq class="lines">
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                            <span b-skjwban1nq></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+            <!-- End Mobile Toggle -->
+
+
+            <div b-skjwban1nq id="navigation">
+                <!-- Navigation Menu-->
+                <ul b-skjwban1nq class="navigation-menu nav-left">
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Products</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Guest" class="sub-menu-item">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Orders</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart" class="sub-menu-item">Shop Cart</a></li>
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart/Myorder" class="sub-menu-item">My Orders</a></li>
+                        </ul>
+                    </li>
+                    <li b-skjwban1nq class="has-submenu parent-menu-item">
+                        <a b-skjwban1nq href="javascript:void(0)">Accounts</a><span b-skjwban1nq class="menu-arrow"></span>
+                        <ul b-skjwban1nq class="submenu">
+                            <li b-skjwban1nq><a b-skjwban1nq href="/Cart" class="sub-menu-item">Manager Accounts</a></li>
+                        </ul>
+                    </li>
+                </ul><!--end navigation menu-->
+            </div><!--end navigation-->
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+
+    <div class="page-wrapper doctris-theme">
+
+        <!-- Start Page Content -->
+        <main class="page-content bg-light">
+            <div class="container-fluid">
+                <br><br></br>
+                <h1 class="text-center pt-5">Update product</h1>
+                <div class="layout-specing">
+                    <h5 class="mb-0">Update product</h5>
+                    <div class="wrapper my-5">
+
+                        <div class="wrapper my-5 col-12">
+                            <div class="form-wrapper col-md-6">
+                                <form asp-action="Edit" id="productForm" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <input type="hidden" asp-for="ProductId" />
+
+                                    <div class="form-group col-12">
+                                        <label asp-for="ProductName" class="control-label"></label>
+                                        <input asp-for="ProductName" class="form-control" />
+                                        <span asp-validation-for="ProductName" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label asp-for="CategoryId" class="control-label"></label>
+                                        <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Category"></select>
+                                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label asp-for="Price" class="control-label"></label>
+                                        <input asp-for="Price" class="form-control" />
+                                        <span asp-validation-for="Price" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label asp-for="Quantity" class="control-label"></label>
+                                        <input asp-for="Quantity" class="form-control" />
+                                        <span asp-validation-for="Quantity" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="form-group col-12">
+                                        <label asp-for="Image" class="control-label"></label> (optional)
+                                        <input asp-for="Image" class="form-control" />
+                                        <span asp-validation-for="Image" class="text-danger"></span>
+                                        <img src="@Model.Image" width="200" height="200" />
+                                    </div>
+
+                                    <div class="form-group form-check ml-3">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
+                                        </label>
+                                    </div>
+                                    <div class="text-center">
+
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary col-md-3 mb-3">Update</button>
+                                            <div><a asp-action="Index">Back to List</a></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--end container-->
+            <!-- Footer Start -->
+            <!-- Start Footer -->
+            <footer class="bg-footer py-4">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-sm-6">
+                            <div class="text-sm-start text-center">
+                                <p class="mb-0"><script>document.write(new Date().getFullYear())</script> © Doctris. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="../../../index.html" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            </div>
+                        </div><!--end col-->
+
+                        <div class="col-sm-6 mt-4 mt-sm-0">
+                            <ul class="list-unstyled footer-list text-sm-end text-center mb-0">
+                                <li class="list-inline-item"><a href="terms.html" class="text-foot me-2">Terms</a></li>
+                                <li class="list-inline-item"><a href="privacy.html" class="text-foot me-2">Privacy</a></li>
+                                <li class="list-inline-item"><a href="aboutus.html" class="text-foot me-2">About</a></li>
+                                <li class="list-inline-item"><a href="contact.html" class="text-foot me-2">Contact</a></li>
+                            </ul>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </footer><!--end footer-->
+            <!-- End Footer -->
+            <!-- javascript -->
+            <script src="../assets/libs/feather-icons/feather.min.js"></script>
+            <!-- Main Js -->
+            <!-- JAVASCRIPT -->
+            <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="../assets/js/plugins.init.js"></script>
+            <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\refint\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\ref\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.deps.json
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfoInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfo.cs
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CopyComplete
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\refint\DAOLibrary.dll
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.pdb
+C:\Users\ADMIN\OneDrive\Desktop\PRN211\CLOTHES SHOPPING 2\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\ref\DAOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\appsettings.json
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.deps.json
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DAOLibrary.pdb
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\bin\Debug\net6.0\DTOLibrary.pdb
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.AssemblyInfo.cs
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.csproj.CopyComplete
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\refint\DAOLibrary.dll
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\DAOLibrary.pdb
+C:\Users\admin\Desktop\prn doctris 02\Clothes Shopping\DAOLibrary\obj\Debug\net6.0\ref\DAOLibrary.dll
